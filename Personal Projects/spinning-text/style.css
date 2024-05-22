@@ -1,0 +1,146 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  perspective: 50vh;
+}
+
+.Text {
+  transform-style: preserve-3d;
+}
+
+.SpinningText {
+  animation: rotate 8s linear infinite;
+}
+
+.SpinningText::before {
+  content: "I'm a spinning text";
+}
+
+.SpinningText:nth-child(2) {
+  animation-duration: 4s;
+}
+.SpinningText:nth-child(2)::before {
+  content: "I'm a 2 times faster spinning text";
+}
+
+.SpinningText:nth-child(3) {
+  animation-duration: 2.6666666667s;
+}
+.SpinningText:nth-child(3)::before {
+  content: "I'm a 3 times faster spinning text";
+}
+
+.SpinningText:nth-child(4) {
+  animation-duration: 2s;
+}
+.SpinningText:nth-child(4)::before {
+  content: "I'm a 4 times faster spinning text";
+}
+
+.SpinningText:nth-child(5) {
+  animation-duration: 1.6s;
+}
+.SpinningText:nth-child(5)::before {
+  content: "I'm a 5 times faster spinning text";
+}
+
+.SpinningText:nth-child(6) {
+  animation-duration: 1.3333333333s;
+}
+.SpinningText:nth-child(6)::before {
+  content: "I'm a 6 times faster spinning text";
+}
+
+.SpinningText:nth-child(7) {
+  animation-duration: 1.1428571429s;
+}
+.SpinningText:nth-child(7)::before {
+  content: "I'm a 7 times faster spinning text";
+}
+
+.SpinningText:nth-child(8) {
+  animation-duration: 1s;
+}
+.SpinningText:nth-child(8)::before {
+  content: "I'm a 8 times faster spinning text";
+}
+
+.SpinningText:nth-child(9) {
+  animation-duration: 0.8888888889s;
+}
+.SpinningText:nth-child(9)::before {
+  content: "I'm a 9 times faster spinning text";
+}
+
+.SpinningText:nth-child(10) {
+  animation-duration: 0.8s;
+}
+.SpinningText:nth-child(10)::before {
+  content: "I'm a 10 times faster spinning text";
+}
+
+.SpinningText:nth-child(11) {
+  animation-duration: 0.7272727273s;
+}
+.SpinningText:nth-child(11)::before {
+  content: "I'm a 11 times faster spinning text";
+}
+
+.SpinningText:nth-child(12) {
+  animation-duration: 0.6666666667s;
+}
+.SpinningText:nth-child(12)::before {
+  content: "I'm a 12 times faster spinning text";
+}
+
+.SpinningText:nth-child(13) {
+  animation-duration: 0.6153846154s;
+}
+.SpinningText:nth-child(13)::before {
+  content: "I'm a 13 times faster spinning text";
+}
+
+.SpinningText:nth-child(14) {
+  animation-duration: 0.5714285714s;
+}
+.SpinningText:nth-child(14)::before {
+  content: "I'm a 14 times faster spinning text";
+}
+
+.SpinningText:nth-child(15) {
+  animation-duration: 0.5333333333s;
+}
+.SpinningText:nth-child(15)::before {
+  content: "I'm a 15 times faster spinning text";
+}
+
+.SpinningText:nth-child(16) {
+  animation-duration: 0.5s;
+}
+.SpinningText:nth-child(16)::before {
+  content: "I'm a 16 times faster spinning text";
+}
+
+.SpinningText:nth-child(17) {
+  animation-duration: 0.4705882353s;
+}
+.SpinningText:nth-child(17)::before {
+  content: "I'm a 17 times faster spinning text";
+}
+
+.SpinningText:nth-child(18) {
+  animation-duration: 0.4444444444s;
+}
+.SpinningText:nth-child(18)::before {
+  content: "I'm a 18 times faster spinning text";
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}

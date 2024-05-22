@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header {
+    background-color: #252525;
+}
+
+.header-inner {
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+
+    position: relative;
+    margin: 0 9px;
+    padding: 0 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1px;
+    background-color: #9fc4ce;
+    transition: all 300ms ease;
+}
+
+.navbar a:hover {
+    color: #9fc4ce;
+}
+
+.navbar a:hover::after {
+    width: 85%;
+}
+
+.navbar .active {
+    position: relative;
+    color: #9fc4ce;
+}
+
+.navbar .active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: #9fc4ce;
+}
+
+.header-inner a {
+    color: white;
+}
+
+.social-nav {
+    display: flex;
+    align-items: center;
+}
+
+.social-nav img {
+    margin: 0 6px;
+
+}
+
+.social-nav .book-cta {
+    margin-left: 15px;
+    color: black;
+    background-color: white;
+    padding: 14px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+body {
+    font-family: "Work", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeLegibility;
+    background: #fff;
+    color: #252525;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.cover {
+    background-image: url(https://matchthemes.com/demowp/caverta/wp-content/uploads/blog-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 92%;
+    position: relative;
+    position: absolute;
+    z-index: 4;
+    padding: 0 15px;
+    width: 98%;
+    left: auto;
+    margin-bottom: 81px;
+}
+
+.main-text {
+    font-family: "Lora", serif;
+    display: block;
+    color: white;
+    line-height: 1.2em;
+    font-size: 108px;
+    letter-spacing: .03em;
+    font-weight: 500;
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    padding: 0 15px;
+    width: 100%;
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -50%);
+}
+
+.sub-text {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-size: small;
+    text-transform: uppercase;
+    opacity: .9;
+}
+
+h1 {
+    line-height: 1.2em;
+    margin-bottom: 24px;
+    font-weight: 100;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+.row{
+    
+}
+.left-big-column {
+    width: 70%;
+    justify-content: start;
+}
+
+.right-big-column {
+    width: 30%;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+}
+
+.sub-column-right {
+    width: 50%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    position: relative;
+    margin-top: 0;
+}
+
+.sub-column-left {
+    width: 40%;
+}
+.dish-name{
+    font-weight: 400;
+    font-family: Lora, serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.date {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.readmore-button {
+    background-color: #9fc4ce;
+    border: none;
+    color: white;
+    margin-top: 36px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.styling {
+    padding-left: 36px;
+}
+
+.cat-item {
+    margin-bottom: 32px;
+}
+
+.form {
+    background-color: #ffffff;
+    width: 100%;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.right-col-button {
+    font-size: 8pt;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px !important;
+    color: #252525;
+    background: #f2f2f2;
+    padding: 6px 12px;
+    text-align: center;
+    margin: 0 3px 7px 0;
+    border: none;
+}
+
+.right-col-heading {
+    margin-bottom: 32px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 550;
+}
+
+li {
+    margin-bottom: 16px;
+    padding-bottom: 0;
+    line-height: 1.4;
+    text-decoration: none;
+    border: none;
+}

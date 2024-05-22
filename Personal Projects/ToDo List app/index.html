@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ProgProd - Toodle List App (JavaScript Demo)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="siteHeader">
+	<h1 class="siteHeaderTitle">Toodle List</h1>
+	<h2 class="siteHeaderTag">What are we doing today?</h2>
+</header>
+
+<main>
+	<section id="input" class="todoInput">
+		<form class="todoForm">
+			<label for="todoItemInput" class="todoLabel">To Do:</label>
+			<input id="todoItemInput" type="text" placeholder="I need to do..." />
+			<input id="addItemBtn" type="button" value="Add ToDo &raquo;" />
+		</form>
+	</section>
+
+	<section id="output" class="todoOutput">
+		<h1 class="todoTitle">Things to do today:</h1>
+		<ol id="todoList">
+			<li>Write some JavaScript</li>
+		</ol>
+	</section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

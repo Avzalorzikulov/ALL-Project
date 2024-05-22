@@ -1,0 +1,76 @@
+#menu-text2{
+    text-transform: uppercase;
+    font-family: Work Sans , 'serif';
+    font-weight: 500;
+}
+
+.main-inner{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+.side-info-item {
+    margin-bottom: 30px;
+}
+.side-info-item h3{
+    display: inline;
+    position: relative;
+    color: #9fc4ce;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 18px;
+}
+.side-info-item h3::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -18px;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 10px;
+    background-color: #9fc4ce;
+}
+.side-info-item h3::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 10px;
+    background-color: #9fc4ce;
+}
+
+.side-info-item p{
+    margin-top: 20px;
+    line-height: 1.4;
+    
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.form :is(input , textarea) {
+    border: none;
+    background-color: #f2f2f2;
+    padding: 19px 16px;
+    transition: all 300ms ease;
+    outline-color: transparent;
+}
+.form :is(input , textarea)::placeholder{
+    color: black;
+    font-size: 16px;
+}
+.form :is(input , textarea):focus{
+    outline-offset: 4px;
+    outline-color: #9fc4ce;
+}
+
+.contact-footer{
+    margin-top: -4px;
+}

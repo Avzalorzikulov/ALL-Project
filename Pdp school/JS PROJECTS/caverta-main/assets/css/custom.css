@@ -1,0 +1,570 @@
+/*HEADER ___ HEADER___ HEADER*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.section-padding{
+    padding: 81px 0px;
+}
+.header
+{
+    background-color: #252525;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-inner{
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    
+    position: relative;
+    margin: 0 9px;
+    padding:  0 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left : 50% ;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1px;
+    background-color: #9fc4ce;
+    transition: all 300ms ease;
+}
+
+.navbar a:hover{
+    color: #9fc4ce;
+}
+
+.navbar a:hover::after{
+    width: 85%;
+}
+
+.navbar .active {
+    position: relative;
+    color: #9fc4ce;
+}
+.navbar .active::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left : 50% ;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: #9fc4ce;
+}
+
+.header-inner a{
+    color: white;
+}
+
+.social-nav{
+    display: flex;
+    align-items: center;
+}
+
+.social-nav img{
+    margin: 0 6px;
+
+}
+.social-nav .book-cta{
+    margin-left: 15px;
+    color: black  ;
+    background-color: white;
+    border: 2px solid white;
+    padding: 12px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 500ms ease;
+}
+
+.social-nav .book-cta:hover{
+    background-color: transparent ; 
+    color: white;
+}
+/*HEADER ___ HEADER___ HEADER*/
+
+
+/*PARALLAX __ PARALLAX __ PARALLAX*/
+.parallax {
+    position: relative;
+    width: 100% ;
+    height: calc(100vh - 70px);
+    background-image: url("../img/reservation-page.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.black-overlay{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*PARALLAX __ PARALLAX __ PARALLAX*/
+.parallax-heading{
+    text-align: center;
+    color: white;
+}
+.parallax-heading h1{
+    font-size: 110px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+}
+
+.parallax-heading h6{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.parallax-btn{
+    padding: 8px 0px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: 0px;
+    transition: all 400ms ease;
+    border-bottom: 2px solid white;
+}
+
+.parallax-btn:hover{
+    color: #9fc4ce;
+    border-bottom: 2px solid #9fc4ce;
+    cursor: pointer;
+}
+
+/*SLIDER ___ SLIDER*/
+#slider {
+    overflow: hidden;
+    position: relative;
+}
+
+#slider figure {
+    position: relative;
+    height: calc( 100vh - 70px);
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+#slider figure > div {
+    height: 100%;
+}
+#slider .parallax-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 10;
+    text-align: center;
+    color: white;
+}
+
+/*WELCOME___WELCOME___WELCOME*/
+.welcome-inner{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+}
+.welcome-text{
+    padding-top: 40px;
+}
+.section-heading{
+    text-align: center;
+}
+.section-heading h6{
+    display: inline;
+    position: relative;
+    color: #9fc4ce;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.section-heading h6::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -18px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 2px;
+    background-color: #9fc4ce;
+}
+.section-heading h6::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 2px;
+    background-color: #9fc4ce;
+}
+
+.section-heading h1 {
+    margin-top: 18px;
+    margin-bottom: 52px;
+    font-size: 52px;
+    font-weight: 400;
+    font-family: Lora, serif;
+}
+.section-heading p{
+    line-height: 25px;
+    text-align: center;
+
+}
+
+.cta-btn{
+    margin-top: 48px;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid transparent;
+    background-color: #9fc4ce;
+    transition: all 500ms ease;
+}
+.cta-btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #9fc4ce;
+    color: #9fc4ce;
+}
+
+/*WELCOME___WELCOME___WELCOME*/
+
+
+/*CTA_SECTION __ CTA_SECTION*/
+.cta-section{
+    position: relative;
+    min-height: 420px;
+    background-image: url(../img/parallax-bkg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cta-section .section-heading{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.cta-section .section-heading h6{
+    color: white;
+}
+.cta-section .section-heading h6::after{
+    background-color: white;
+}
+.cta-section .section-heading h6::before{
+    background-color: white;
+}
+.cta-section .section-heading h1{
+    color: white;
+    margin-bottom: unset ;
+}
+/*CTA_SECTION __ CTA_SECTION*/
+
+/*MENU____MENU ___ MENU__ MENU */
+.menu-navbar{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.menu-navbar .active{
+    color: #9fc4ce;
+}
+.menu-navbar button{
+    padding: 0 10px;
+    margin: 0 18px;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 500ms ease;
+}
+
+.menu-navbar button:hover{
+    cursor: pointer;
+    color: #9fc4ce;
+}
+.menu-list-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 50px;
+}
+.menu-list-parent ul{
+    list-style: none ;
+
+}
+.menu-list-parent li{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dotted rgb(170, 168, 168);
+}
+.menu-list-parent h6{
+    font-family: Lora, serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.menu-list-parent p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+.item-name{
+    display: flex;
+    justify-content: space-between;
+}
+/*MENU____MENU ___ MENU__ MENU */
+
+/*TEAM TAEM TEAM++++TEAM */
+.team-inner{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+.team-inner .section-heading{
+    padding-top: 70px;
+}
+/*TEAM TAEM TEAM++++TEAM */
+
+/*TESTIMONIALS____TESTIMONIALS___TESTIMONIALS*/
+.testimonials{
+    min-height: 670px;
+    overflow: hidden;
+}
+.testimonials-text{
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.testimonials-text p{
+    position: relative;
+    padding: unset ;
+    margin-top: 70px;
+    margin-bottom: 55px;
+    font-size: 26px;
+    line-height: 1.4;
+    font-family: Lora, serif;
+    font-style: italic;
+    color: white;
+}
+
+.testimonials-text p::after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: -40px;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+.testimonials-footer{
+    color: white;
+}
+.testimonials-footer h5{
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.testimonials-footer span{
+    font-size: 13px;
+}
+/*CONTACT____CONTACT____CONTACT*/
+.contact .container .section-heading h1{
+    margin-bottom: 80px;
+}
+.contact-text{
+    display: flex;
+    gap: 35px;
+}
+.contact-text-inner h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.contact-text-inner p{
+    text-align: left ;
+}
+.contact-form{
+    padding: 50px 0 0 0 ;
+}
+.form-inner .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.form-inner :is(input,textarea){
+    padding: 20px 16px;
+    background-color: #f2f2f2;
+    border: none;
+
+}
+.form-inner .row input::placeholder{
+    color: black;
+    font-size: 16px;
+}
+.form-inner textarea{
+    background-color: #f2f2f2;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+.form-inner textarea::placeholder{
+    color: black;
+    font-size: 16px;
+}
+
+/*CONTACT____CONTACT____CONTACT*/
+
+/*FOOTER_____ FOOTER_____ FOOTER_____FOOTER_____*/
+.footer{
+    background-color: #000000;
+}
+.footer-inner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-bottom: 65px;
+}
+.footer-inner-col p{
+    margin-top: 35px;
+    color: #999999;
+    line-height: 1.5;
+}
+.footer-inner-col p:last-child{
+    margin-top: 28px;
+}
+.footer-inner-col h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-inner-col  a{
+    display: block;
+    margin: 20px 0;
+    color: #999999;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999999;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.footer-bottom a img{
+    margin: 0 3px;
+    width: 15px;
+}
+/*FOOTER_____ FOOTER_____ FOOTER_____FOOTER_____*/
+
+
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+
+    }
+}
+
+.navbar .inactive{
+    color: #beb8b8;
+}
+
+@media (min-width : 900px ) and (max-width : 1200px)
+{
+    .logo{
+        width: 80px;
+        transform: translateY(3px);
+    }
+    .navbar a{
+    
+        position: relative;
+        margin: 0 5px;
+        padding:  0 3px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 300ms ease;
+    }
+}

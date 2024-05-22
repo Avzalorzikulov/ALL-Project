@@ -1,0 +1,72 @@
+:root {
+    --main:#38b6ff;
+    --accent:#282a30;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+  background-color: #282a30;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+    
+}
+
+button {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    font-size: 1rem;
+    margin: 10px  auto;
+    cursor: pointer;
+    border: 2px solid var(--main);
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+    background-color: var(--accent);
+}
+
+.icon {
+    background-color: var(--main);
+    padding: 10px;
+    width: 40px;
+    z-index: 2;
+    color: var(--accent);
+}
+
+span {
+    padding: 0px 30px;
+    color: var(--main);
+    transition: all .3s ease .5s;
+    z-index: 2;
+}
+
+button:after {
+    position: absolute;
+    content: "";
+    right:  0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main);
+    transform-origin: right;
+    transition: all .7s ease;
+    z-index: 1;
+    transform: scale(0,1);
+}
+
+button:hover:after {
+    transform: scale(1,1);
+}
+
+button:hover span{
+    color: var(--accent);
+}

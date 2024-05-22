@@ -1,0 +1,63 @@
+
+:root {
+  --unit: 3vw;
+}
+
+.block {
+  --total-width: calc(var(--block-count) * var(--size));
+}
+.block::before {
+  width: calc(var(--total-width) * (var(--data-rating) * 0.01));
+  transform: translateX(calc(((var(--index) - 1) * var(--size)) * -1));
+}
+
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.rating-display {
+  display: flex;
+}
+.rating-display::before {
+  content: var(--data-rating);
+}
+.rating-display > * + * {
+  margin-left: calc(var(--unit) * 0.25);
+}
+
+.block {
+  --size: calc(var(--unit) * 2);
+  --border-width: calc(var(--size) * 0.1);
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  overflow: hidden;
+  border-radius: calc(var(--size) * 0.2);
+  background-color: transparent;
+  box-shadow: 0 0 0 var(--border-width) #460073 inset;
+}
+.block::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--size);
+  background-color: #a100ff;
+  border-radius: calc(var(--size) * 0.2);
+  z-index: -1;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(var(--unit) * 2);
+  font-size: 0.9em;
+}
+.range * + * {
+  margin-left: calc(var(--unit) * 0.5);
+}

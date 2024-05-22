@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Delius+Unicase|Open+Sans');
+
+body {
+	font-size: 100%;
+	font-family: 'Open Sans', "Trebuchet MS", Georgia, serif;
+	background-color: hsl(40, 9%, 89%);
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 2em 5%
+}
+
+section {
+	flex-basis: 45%;
+	color: #786871;
+	background-color: #ffffff;
+	border: .0625em solid hsl(294, 100%, 11%);
+	border-radius: .25em;
+	margin: 1em auto;
+	padding: 0 1em;
+}
+
+h1, h2 {
+	font-family: 'Delius Unicase', 'Open Sans', 'Trebuchet MS', Verdana, sans-serif;
+	font-weight: 400;
+}
+
+.siteHeader {
+	text-align: center;
+	color: #fff;
+	background-color: hsl(294, 100%, 11%);
+	margin: 0;
+	padding: 1em 0 3em 0;
+	border-top: .25em solid hsl(76, 79%, 44%);
+}
+.siteHeaderTitle {
+	font-size: 4.5em;
+	margin: 0;
+}
+.siteHeaderTag {
+	font-family: 'Delius Unicase', 'Open Sans', 'Trebuchet MS', Verdana, sans-serif;
+	font-size: 2em;
+	margin: 0;
+}
+
+.todoInput {
+	
+}
+.todoForm {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: .5em;
+	margin: 0;
+}
+.todoLabel {
+	flex-basis: 100%;
+	font-family: 'Delius Unicase', 'Open Sans', 'Trebuchet MS', Verdana, sans-serif;
+	font-weight: 700;
+	font-size: 2.5em;
+	color: hsl(76, 79%, 44%);
+	margin: 0 0 .5em 0;
+}
+.todoForm input {
+	flex-basis: 100%;
+	font-size: 1.5em;
+	color: hsl(326, 7%, 44%);
+	padding: .25em .5em;
+	margin: .5em 0;
+	border: 1px solid hsl(326, 7%, 44%);
+	border-radius: .25em;
+}
+.todoForm input[type="text"] {
+	width: 90%;
+}
+.todoForm input[type="button"] {
+	flex-basis: 50%;
+	font-family: 'Delius Unicase', 'Open Sans', 'Trebuchet MS', Verdana, sans-serif;
+  color: #fff;
+	background-color: hsl(294, 100%, 30%);
+	padding: .25em .5em;
+}
+.todoForm input[type="button"]:hover,
+.todoForm input[type="button"]:active,
+.todoForm input[type="button"]:focus {
+	color: #ffffff;
+	background-color: hsl(76, 79%, 44%);
+}
+
+.todoOutput {
+  color: hsl(326, 7%, 44%);
+	background-color: #fff;
+	border: .0625em solid hsl(294, 100%, 11%);
+	border-radius: .25em;
+	padding: 1em;
+	margin: 1em auto;
+}
+
+.todoTitle {
+	font-weight: 700;
+	font-size: 2.5em;
+	color: hsl(76, 79%, 44%);
+	margin: 0;
+}
+.todoList {
+	font-size: 2em;
+}

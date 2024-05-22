@@ -1,0 +1,43 @@
+.js-item{
+    background-color: blue;
+    width: 300px;
+    color: white;
+    text-align: center;
+    border-radius: 18px;
+
+    &:hover{
+        box-shadow: rgb(217, 108, 108) 20px 10px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        transform: rotate translate 0;
+        color: black;
+        background-color:aliceblue;
+        }
+}
+.js-list{
+    display: flex;
+    gap: 20px;
+}
+.input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    background-color: aqua;
+
+}
+.input2{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    background-color: aqua;
+    
+}
+.button{
+    background-color: blue;
+    width: 200px;
+    
+}

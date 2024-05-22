@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ProgProd - Rating Display CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+	<div class="rating-display" style="--block-count: 5;">
+		<div class="block" style="--index: 1;"></div>
+		<div class="block" style="--index: 2;"></div>
+		<div class="block" style="--index: 3;"></div>
+		<div class="block" style="--index: 4;"></div>
+		<div class="block" style="--index: 5;"></div>
+	</div>
+	<label class="range">
+		<span class="text">Rating</span>
+		<input type="range" id="rating-value" min="0" max="100">
+		<span class="value-display"></span>
+	</label>
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

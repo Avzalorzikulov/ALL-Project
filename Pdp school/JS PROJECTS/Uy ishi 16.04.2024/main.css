@@ -1,0 +1,15 @@
+
+
+.text {
+    background-color: plum;
+    width: 600px;
+    height: 20px;
+    border-radius: 15px;
+    padding: 4px 8px;
+    list-style: none;
+    margin-left: 70px;
+    margin-bottom: 15px;
+    text-align: start;
+    justify-content: space-between;
+    display: flex;
+}

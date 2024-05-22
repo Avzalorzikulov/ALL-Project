@@ -1,0 +1,59 @@
+table {
+    width: 800px;
+  border: none;
+  gap: 10px;
+  margin-left: 300px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  margin-top: 10px;  
+    
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    
+}
+.edit, .delete {
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    width: 50px;
+    border: none;
+    
+}
+.input{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+form{
+    margin-left: 550px;
+}
+.button{
+    background-color: blue;
+    width: 300px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.edit {
+    background-color: #f0ad4e;
+}
+.delete {
+    background-color: #d9534f;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tdcha{
+    background-color:#CCCCCC ;  
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+}

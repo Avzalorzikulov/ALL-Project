@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header {
+    background-color: #252525;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+
+.header-inner {
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+
+    position: relative;
+    margin: 0 9px;
+    padding: 0 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1px;
+    background-color: #9fc4ce;
+    transition: all 300ms ease;
+}
+
+.navbar a:hover {
+    color: #9fc4ce;
+}
+
+.navbar a:hover::after {
+    width: 85%;
+}
+
+.navbar .active {
+    position: relative;
+    color: #9fc4ce;
+}
+
+.navbar .active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: #9fc4ce;
+}
+
+.header-inner a {
+    color: white;
+}
+
+.social-nav {
+    display: flex;
+    align-items: center;
+}
+
+.social-nav img {
+    margin: 0 6px;
+
+}
+
+.social-nav .book-cta {
+    margin-left: 15px;
+    color: black;
+    background-color: white;
+    padding: 14px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.menu {
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    min-height: calc(100vh - 70px);
+    background-image: url('../img/menu-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.item-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#menu-text {
+    line-height: 1.2em;
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 108px;
+    letter-spacing: .03em;
+    font-family: "Lora", serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+#menu-text2 {
+    line-height: 1.2em;
+    margin-bottom: 24 px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .03em;
+    font-family: "Lora", serif;
+    text-align: center;
+    color: #fff;
+}
+
+
+.content {
+    padding: 80px 0 ;
+    background-color: white;
+    display: block;
+    padding-left: 20%;
+    padding-right: 20%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.starters-text {
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.left-column {
+    hyphens: manual;
+    width: 50%;
+}
+
+.right-column {
+    position: relative;
+    width: 50%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.starters-text {
+    display: block;
+    font-family: "Lora", serif;
+    font-size: 48px;
+    text-align: center;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 16px;
+    color: #252525;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.main-course-text {
+    display: block;
+    font-family: "Lora", serif;
+    font-size: 48px;
+    margin-bottom: 12 px;
+    color: #252525;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-left: 0 !important;
+    text-align: center;
+}
+
+.attachment-full size-full {
+    height: auto;
+    max-width: 100%;
+}
+
+li {
+    font-size: 16px;
+    list-style: none;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px dotted #999;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+i {
+    font-size: small;
+}
+
+.elementor-image {
+    padding: 10px;
+}
+
+.ul-right {
+    margin-right: 0px;
+    
+}
+
+.content-1 {
+
+}
+#menu-text2{
+    font-family: "Work Sans" , 'serif' !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.soups-img {
+    display: flex;
+    justify-content: end;
+    padding: 0px;
+}
+/*FOOTER_____ FOOTER_____ FOOTER_____FOOTER_____*/
+
+.section-padding{
+    padding: 81px 0px;
+}
+/*FOOTER_____ FOOTER_____ FOOTER_____FOOTER_____*/

@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #222;
+}
+#cubeSocial,
+#semiSocial,
+#circleSocial {
+	position: relative;
+	display: flex;
+	transform-style: preserve-3d;
+	margin-bottom: 20px;
+}
+#cubeSocial li,
+#semiSocial li,
+#circleSocial li {
+	position: relative;
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	margin: 0px 10px;
+}
+#cubeSocial li span,
+#semiSocial li span,
+#circleSocial li span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex!important;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+	color: #FFF2;
+	font-size: 30px!important;
+	transition: 0.2s;
+}
+#cubeSocial li:hover span,
+#semiSocial li:hover span,
+#circleSocial li:hover span {
+	z-index: 1000;
+	transition: 0.5s;
+	color: #fff;
+	box-shadow: -1px 1px 1px #0005;
+}
+#cubeSocial li:hover span:nth-child(5),
+#semiSocial li:hover span:nth-child(5),
+#circleSocial li:hover span:nth-child(5) {
+	transform: translate(20px,-12px);
+	opacity: 1;
+}
+#cubeSocial li:hover span:nth-child(4),
+#semiSocial li:hover span:nth-child(4),
+#circleSocial li:hover span:nth-child(4) {
+	transform: translate(15px,-10px);
+	opacity: .8;
+}
+#cubeSocial li:hover span:nth-child(3),
+#semiSocial li:hover span:nth-child(3),
+#circleSocial li:hover span:nth-child(3) {
+	transform: translate(10px,-8px);
+	opacity: .6
+}
+#cubeSocial li:hover span:nth-child(2),
+#semiSocial li:hover span:nth-child(2),
+#circleSocial li:hover span:nth-child(2) {
+	transform: translate(5px,-6px);
+	opacity: .4
+}
+#cubeSocial li:hover span:nth-child(1),
+#semiSocial li:hover span:nth-child(1),
+#circleSocial li:hover span:nth-child(1) {
+	transform: translate(0px,-4px);
+	opacity: .2
+}
+#cubeSocial li:nth-child(1):hover span,
+#semiSocial li:nth-child(1):hover span,
+#circleSocial li:nth-child(1):hover span {
+	background-color: #3b5999;
+}
+#cubeSocial li:nth-child(2):hover span,
+#semiSocial li:nth-child(2):hover span,
+#circleSocial li:nth-child(2):hover span {
+	background-color: #55acee;
+}
+#cubeSocial li:nth-child(3):hover span,
+#semiSocial li:nth-child(3):hover span,
+#circleSocial li:nth-child(3):hover span {
+	background-color: #0088cc;
+}
+#cubeSocial li:nth-child(4):hover span,
+#semiSocial li:nth-child(4):hover span,
+#circleSocial li:nth-child(4):hover span {
+	background-color: #8c9eff;
+}
+#cubeSocial li:nth-child(5):hover span,
+#semiSocial li:nth-child(5):hover span,
+#circleSocial li:nth-child(5):hover span {
+	background-color: #FF0000;
+}
+
+#semiSocial li span,
+#semiSocial li:hover span  {
+	border-radius: 5px
+}
+#circleSocial li span,
+#circleSocial li:hover span  {
+	border-radius: 10em
+}

@@ -1,0 +1,64 @@
+.js-form {
+    margin-left: 530px;
+    flex-direction: column;
+    
+}
+.js-input {
+    width: 300px;
+    height: 30px;
+border-radius:8px;
+border: 1px solid gray;
+margin-top: 6px;
+}
+.js-input2 {
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid gray;
+margin-top: 6px;
+
+}
+.js-input3 {
+    width: 300px;
+    height: 30px;   
+     border-radius: 8px;
+     border: 1px solid gray;
+margin-top: 6px;
+ 
+}
+
+ .item-age {
+    padding: 8px;
+    text-align: left;
+}
+.js-button {
+    width: 300px;
+    background-color: blue;
+    color: wheat;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    margin-top: 20px;
+}
+.list {
+    margin-left: 300px;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-collapse: collapse;
+}
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+}
+.delete-btn{
+    background-color: #d9534f;
+    border: none;
+    margin-left: 700px;
+}
+.edit-btn{
+    background-color: #f0ad4e;
+    border: none;
+    margin-left: -4px;
+}

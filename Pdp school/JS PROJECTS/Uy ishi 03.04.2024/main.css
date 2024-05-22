@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.item{
+    background-color: aqua;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 12px 50px;
+    
+    &:hover{
+        background-color: rgb(255, 2, 2);
+        transform-style: preserve-3d;
+        animation: rot 2s infinite ease;
+        border-radius: 20px;
+        box-shadow: 0 0 50px 0px, inset 0 0 90px 0px;
+        color: white;
+        transition: 1.5s;
+  transition: 1s;
+        transform: rotateX(360deg);
+        }
+        
+        
+}

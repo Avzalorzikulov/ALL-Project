@@ -1,0 +1,35 @@
+.item {
+    display: flex;
+  background-color: red;
+  width: 100px;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  color: white;
+  border-radius: 10px;
+  padding-left: 1px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.input {
+  margin-left: 50px;
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+}
+.spancha {
+  display: inline-block;
+  margin-left: 150px;
+}
+.spancha:hover{
+    cursor: pointer;
+}
+.button {
+  margin-left: -20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border: 1.5px solid black;
+}

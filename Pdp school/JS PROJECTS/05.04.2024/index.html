@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">   
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <select name="user-select" class="js-select">
+        <option disabled selected>Tanlash</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Fantasy">Fantasy</option>    
+        <option value="Adventure">Adventure</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Drama">Drama</option>
+        <option value="Music">Music</option>
+        <option value="Documentary">Documentary</option>
+    </select>
+    <form action="#" class="js-form" method="post">
+        <input type="text"  class="js-input" >
+        <button class="js-button">  
+            Search
+        </button>
+    </form>
+    <ul class="list" style="display: flex;   flex-wrap: wrap; gap: 10px;   list-style: none;">
+        <li class="item" >
+            <h3>  
+                Shazam
+            </h3>
+            <img class="image" src="https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg"  alt="movies">
+            <p>
+                "Action", "Comedy", "Fantasy", 
+            </p>    
+        </li>
+    </ul>
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./bootstrap.min.js"></script>
+  <script src="./arr.js"></script> 
+  <script src="./main.js"></script>
+</body>
+</html>

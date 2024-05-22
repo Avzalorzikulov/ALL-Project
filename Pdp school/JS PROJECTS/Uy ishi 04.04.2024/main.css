@@ -1,0 +1,32 @@
+.gross{
+    padding: 6px 20px;
+background-color: aqua;
+border-radius: 5px;
+border: none;
+}
+.posion{
+    padding: 6px 20px;
+    background-color:cornflowerblue;
+    margin-left: 20px;
+border-radius: 5px;
+border: none;
+}
+.list__inner{
+    background-color:chartreuse;
+    text-align: center;
+    display: inline-block;
+    gap: 20px;
+    padding: 20px 60px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    &
+}
+.pcha{
+    margin-left: 90px;
+}
+.pcha1{
+    margin-right: 70px;
+    margin-top: -35px;
+}

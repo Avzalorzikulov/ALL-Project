@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  padding: 25px;
+}
+
+.js-form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.js-form-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.js-form-button {
+  padding: 10px 130px;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+
+  &:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease ;
+    border: 1px black solid ;
+  }
+}
+
+.js-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  width: 700px;
+  margin-left: 350px;
+}
+
+.delete-btn {
+  border: 0;
+  background-color: #DC3545;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: -3px;
+  border-start-start-radius: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.edit-btn {
+  color: white;
+  background-color: #FFC107;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.js-item-title,
+.js-item-year,
+.js-item-author {
+  text-align: center;
+  margin-right: 10px;
+  flex: 1;  
+ 
+}
+.js-item-id{
+  background-color: #ccc;
+  padding: 10px;
+}
